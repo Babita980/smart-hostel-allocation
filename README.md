@@ -23,13 +23,9 @@ If no suitable room exists → Displays “No room available”.
 🛠️ Tech Stack
 You can choose any stack, but here’s a suggested one:
 
-Frontend: React.js  / Next.js
+Frontend: HTML,CSS,React.js 
 
-Backend: Node.js  / Express.js
-
-Database: MongoDB / PostgreSQL
-
-Deployment: Vercel / Netlify / Render
+Deployment: Vercel 
 
 📊 Data Model
 Each room contains:
