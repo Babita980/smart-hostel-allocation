@@ -10,7 +10,7 @@
   --border: #e5e7eb;
 }
 
-/* ...existing animations... */
+
 @keyframes slideInDown {
   from {
     opacity: 0;
