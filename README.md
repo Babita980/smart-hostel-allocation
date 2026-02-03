@@ -1,16 +1,77 @@
-# React + Vite
+🏨 Smart Hostel Room Allocation System
+📌 Overview
+The Smart Hostel Room Allocation System is a web application designed to manage hostel rooms and automatically allocate them to students based on capacity and facility requirements.
+This project demonstrates skills in data modeling, allocation algorithms, UI design, and deployment.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+Add Room: Add new hostel rooms with details (capacity, AC, washroom).
 
-Currently, two official plugins are available:
+View All Rooms: Display a list of all available rooms.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Search Rooms: Filter rooms by:
 
-## React Compiler
+Minimum required capacity
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+AC requirement
 
-## Expanding the ESLint configuration
+Attached washroom requirement
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Allocate Room: Automatically allocate the smallest possible room that satisfies student needs.
+
+If no suitable room exists → Displays “No room available”.
+
+🛠️ Tech Stack
+You can choose any stack, but here’s a suggested one:
+
+Frontend: React.js  / Next.js
+
+Backend: Node.js  / Express.js
+
+Database: MongoDB / PostgreSQL
+
+Deployment: Vercel / Netlify / Render
+
+📊 Data Model
+Each room contains:
+
+roomNo → Unique room number
+
+capacity → Maximum number of students
+
+hasAC → Boolean (true/false)
+
+hasAttachedWashroom → Boolean (true/false)
+
+🎯 Allocation Logic
+text
+AllocateRoom(students, needsAC, needsWashroom):
+1. Filter rooms that meet requirements (capacity, AC, washroom).
+2. Select the smallest possible room that satisfies conditions.
+3. If no room found → return "No room available".
+🖥️ UI Screens
+Add Room Form
+
+Room Listing Screen
+
+Search & Allocate Screen
+
+Output Display Panel
+
+📂 Project Structure
+Code
+├── src
+│   ├── components   # UI Components
+│   ├── pages        # Screens (Add, View, Search, Allocate)
+│   ├── services     # Allocation logic & API calls
+│   └── utils        # Helper functions
+├── public           # Static assets
+├── README.md
+📦 Deployment
+The project is deployed publicly and accessible via:
+Live URL → [https://vercel.com/babita-mehtas-projects/smart-hostel-allocation]
+GitHub Repo → [https://github.com/Babita980/smart-hostel-allocation.git]
+
+
+
+🧑‍💻 Author
+Developed by [Babita Mehta] as part of the Round-2 Assignment.
